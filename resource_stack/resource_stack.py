@@ -23,6 +23,3 @@ class ResourceStack(Stack):
                                             code=function_lambda.Code.from_asset('./lambda_code_demo'),
                                             handler="demo_lambda.lambda_handler")
 
-        bucket = s3.Bucket(self, "MyfirstBucket", versioned=True,
-                           bucket_name="demo-bucket-beyond-the-cloud-98979867",
-                           block_public_access=s3.BlockPublicAccess.BLOCK_ALL)
