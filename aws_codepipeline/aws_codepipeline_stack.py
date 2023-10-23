@@ -26,7 +26,7 @@ class AwsCodepipelineStack(Stack):
         git_input = pipelines.CodePipelineSource.connection(
             repo_string="karanjagad/cicd-demo",
             branch="main",
-            connection_arn="arn:aws:codestar-connections:eu-central-1:372775801647:connection/5ba58d40-4796-443d-bd86-37c610f0e665",
+            connection_arn="arn:aws:codestar-connections:eu-central-1:488050839102:connection/4931190e-f408-4ecd-aed0-29a19278cd91",
         )
 
         code_pipeline = codepipeline.Pipeline(
